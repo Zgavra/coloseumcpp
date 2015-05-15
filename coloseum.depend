@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1431725982 source:e:\githubcoloseum\coloseumcpp\main.cpp
+	<iostream>
+	"Spear.h"
+	"Coloseum.h"
+
+1431720895 source:e:\githubcoloseum\coloseumcpp\src\models\weapon.cpp
+	"Weapon.h"
+
+1431721716 e:\githubcoloseum\coloseumcpp\include\models\weapon.h
+	<string>
+
+1431721803 source:e:\githubcoloseum\coloseumcpp\src\models\spear.cpp
+	"Spear.h"
+	<string>
+
+1431721839 e:\githubcoloseum\coloseumcpp\include\models\spear.h
+	<Weapon.h>
+	<string>
+
+1431722324 source:e:\githubcoloseum\coloseumcpp\src\models\swordandshield.cpp
+	"SwordAndShield.h"
+	<string>
+
+1431722623 e:\githubcoloseum\coloseumcpp\include\models\swordandshield.h
+	<Weapon.h>
+	<string>
+
+1431722599 source:e:\githubcoloseum\coloseumcpp\src\models\bow.cpp
+	"Bow.h"
+	<string>
+
+1431722651 e:\githubcoloseum\coloseumcpp\include\models\bow.h
+	<Weapon.h>
+	<string>
+
+1431725301 source:e:\githubcoloseum\coloseumcpp\src\models\gladiator.cpp
+	"Gladiator.h"
+	<string>
+
+1431725240 e:\githubcoloseum\coloseumcpp\include\models\gladiator.h
+	<string>
+	<Weapon.h>
+
+1431726097 e:\githubcoloseum\coloseumcpp\include\models\coloseum.h
+	<list>
+	<Gladiator.h>
+
