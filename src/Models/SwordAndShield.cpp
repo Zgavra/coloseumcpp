@@ -5,7 +5,7 @@ SwordAndShield::SwordAndShield()
 {
     //ctor
     this->weaponName = "Sword and shield";
-    this->weaponId = 2;
+    this->weaponId = 3;
 }
 
 SwordAndShield::~SwordAndShield()

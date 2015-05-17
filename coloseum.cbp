@@ -36,13 +36,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/DefaultNamesReader.h" />
 		<Unit filename="include/Models/Bow.h" />
 		<Unit filename="include/Models/Coloseum.h" />
 		<Unit filename="include/Models/Gladiator.h" />
 		<Unit filename="include/Models/Spear.h" />
 		<Unit filename="include/Models/SwordAndShield.h" />
 		<Unit filename="include/Models/Weapon.h" />
+		<Unit filename="include/Resources/GladiatorNames.txt" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/DefaultNamesReader.cpp" />
 		<Unit filename="src/Models/Bow.cpp" />
 		<Unit filename="src/Models/Coloseum.cpp" />
 		<Unit filename="src/Models/Gladiator.cpp" />

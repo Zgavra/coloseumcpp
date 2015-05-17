@@ -5,7 +5,7 @@ Bow::Bow()
 {
     //ctor
     this->weaponName = "Bow and arrow";
-    this->weaponId = 3;
+    this->weaponId = 1;
 }
 
 Bow::~Bow()

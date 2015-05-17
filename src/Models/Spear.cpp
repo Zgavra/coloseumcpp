@@ -5,7 +5,7 @@ Spear::Spear()
 {
     //ctor
     this->weaponName = "Spear";
-    this->weaponId = 1;
+    this->weaponId = 2;
 }
 
 Spear::~Spear()
