@@ -1,11 +1,11 @@
 #include "Spear.h"
 #include <string>
 
-Spear::Spear(std::string weaponName, int weaponId)
+Spear::Spear()
 {
     //ctor
-    this->weaponName = weaponName;
-    this->weaponId = weaponId;
+    this->weaponName = "Spear";
+    this->weaponId = 1;
 }
 
 Spear::~Spear()
@@ -16,4 +16,9 @@ Spear::~Spear()
 int Spear::GetId()
 {
     return this->weaponId;
+}
+
+std::string Spear::GetWeaponName()
+{
+    return this->weaponName;
 }

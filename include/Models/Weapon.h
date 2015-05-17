@@ -9,6 +9,7 @@ class Weapon
         Weapon();
         virtual ~Weapon();
         virtual int GetId() = 0;
+        virtual std::string GetWeaponName() = 0;
     protected:
         std::string weaponName;
         int weaponId;

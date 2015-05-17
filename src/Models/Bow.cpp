@@ -1,11 +1,11 @@
 #include "Bow.h"
 #include <string>
 
-Bow::Bow(std::string weaponName, int weaponId)
+Bow::Bow()
 {
     //ctor
-    this->weaponName = weaponName;
-    this->weaponId = weaponId;
+    this->weaponName = "Bow and arrow";
+    this->weaponId = 3;
 }
 
 Bow::~Bow()
@@ -16,4 +16,9 @@ Bow::~Bow()
 int Bow::GetId()
 {
     return this->weaponId;
+}
+
+std::string Bow::GetWeaponName()
+{
+    return this->weaponName;
 }

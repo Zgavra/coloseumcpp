@@ -1,11 +1,11 @@
 #include "SwordAndShield.h"
 #include <string>
 
-SwordAndShield::SwordAndShield(std::string weaponName, int weaponId)
+SwordAndShield::SwordAndShield()
 {
     //ctor
-    this->weaponName = weaponName;
-    this->weaponId = weaponId;
+    this->weaponName = "Sword and shield";
+    this->weaponId = 2;
 }
 
 SwordAndShield::~SwordAndShield()
@@ -16,4 +16,9 @@ SwordAndShield::~SwordAndShield()
 int SwordAndShield::GetId()
 {
     return this->weaponId;
+}
+
+std::string SwordAndShield::GetWeaponName()
+{
+    return this->weaponName;
 }

@@ -8,9 +8,10 @@
 class SwordAndShield : public Weapon
 {
     public:
-        SwordAndShield(std::string weaponName, int weaponId);
+        SwordAndShield();
         virtual ~SwordAndShield();
         int GetId();
+        std::string GetWeaponName();
     protected:
     private:
 };

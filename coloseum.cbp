@@ -37,12 +37,14 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Models/Bow.h" />
+		<Unit filename="include/Models/Coloseum.h" />
 		<Unit filename="include/Models/Gladiator.h" />
 		<Unit filename="include/Models/Spear.h" />
 		<Unit filename="include/Models/SwordAndShield.h" />
 		<Unit filename="include/Models/Weapon.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Models/Bow.cpp" />
+		<Unit filename="src/Models/Coloseum.cpp" />
 		<Unit filename="src/Models/Gladiator.cpp" />
 		<Unit filename="src/Models/Spear.cpp" />
 		<Unit filename="src/Models/SwordAndShield.cpp" />
