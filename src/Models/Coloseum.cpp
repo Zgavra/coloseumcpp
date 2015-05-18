@@ -6,19 +6,20 @@
 Coloseum::Coloseum()
 {
     //ctor
-    Bow bow;
+    /*Bow bow;
     Spear spear;
-    SwordAndShield swordAndShield;
+    SwordAndShield swordAndShield;*/
 
-    listWeapons.push_back(&bow);
-    listWeapons.push_back(&spear);
-    listWeapons.push_back(&swordAndShield);
+    this->listWeapons.push_back(new Bow());
+    this->listWeapons.push_back(new Spear());
+    this->listWeapons.push_back(new SwordAndShield());
 }
 
 Coloseum::~Coloseum()
 {
     //dtor
 }
+
 std::list<Gladiator> Coloseum::GetAllGladiators()
 {
     return this->listGladiators;
@@ -27,4 +28,9 @@ std::list<Gladiator> Coloseum::GetAllGladiators()
 std::list<Weapon*> Coloseum::GetAllWeapons()
 {
     return this->listWeapons;
+}
+
+void Coloseum::AddGladiator(Gladiator gladiator)
+{
+    this->listGladiators.push_back(gladiator);
 }

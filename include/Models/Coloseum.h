@@ -14,6 +14,7 @@ class Coloseum
         virtual ~Coloseum();
         std::list<Gladiator> GetAllGladiators();
         std::list<Weapon*> GetAllWeapons();
+        void AddGladiator(Gladiator gladiator);
     protected:
     private:
         std::list<Gladiator> listGladiators;

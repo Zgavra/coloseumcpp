@@ -19,7 +19,7 @@ DefaultNamesReader::DefaultNamesReader()
 
     ifstream myfile;
     string line;
-    myfile.open ("E:\\GladiatorNames.txt");
+    myfile.open ("include\\Resources\\GladiatorNames.txt");
     if (myfile.is_open())
     {
         while ( getline (myfile,line) )

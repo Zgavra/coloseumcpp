@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1431900410 source:e:\githubcoloseum\coloseumcpp\main.cpp
+1431983964 source:e:\githubcoloseum\coloseumcpp\main.cpp
 	<iostream>
 	"Coloseum.h"
 	"DefaultNamesReader.h"
@@ -10,7 +10,7 @@
 1431895547 e:\githubcoloseum\coloseumcpp\include\models\weapon.h
 	<string>
 
-1431894116 source:e:\githubcoloseum\coloseumcpp\src\models\spear.cpp
+1431901276 source:e:\githubcoloseum\coloseumcpp\src\models\spear.cpp
 	"Spear.h"
 	<string>
 
@@ -18,7 +18,7 @@
 	<Weapon.h>
 	<string>
 
-1431894123 source:e:\githubcoloseum\coloseumcpp\src\models\swordandshield.cpp
+1431901280 source:e:\githubcoloseum\coloseumcpp\src\models\swordandshield.cpp
 	"SwordAndShield.h"
 	<string>
 
@@ -26,7 +26,7 @@
 	<Weapon.h>
 	<string>
 
-1431894105 source:e:\githubcoloseum\coloseumcpp\src\models\bow.cpp
+1431901272 source:e:\githubcoloseum\coloseumcpp\src\models\bow.cpp
 	"Bow.h"
 	<string>
 
@@ -42,12 +42,12 @@
 	<string>
 	<Weapon.h>
 
-1431895966 e:\githubcoloseum\coloseumcpp\include\models\coloseum.h
+1431979486 e:\githubcoloseum\coloseumcpp\include\models\coloseum.h
 	<list>
 	<map>
 	<Gladiator.h>
 
-1431896056 source:e:\githubcoloseum\coloseumcpp\src\models\coloseum.cpp
+1431979446 source:e:\githubcoloseum\coloseumcpp\src\models\coloseum.cpp
 	"Coloseum.h"
 	"Bow.h"
 	"Spear.h"
@@ -57,7 +57,7 @@
 	<string>
 	<list>
 
-1431900508 source:e:\githubcoloseum\coloseumcpp\src\defaultnamesreader.cpp
+1431970079 source:e:\githubcoloseum\coloseumcpp\src\defaultnamesreader.cpp
 	"DefaultNamesReader.h"
 	<iostream>
 	<fstream>
@@ -65,4 +65,120 @@
 	<iterator>
 	<list>
 	<string>
+
+1429950622 e:\githubcoloseum\unittest++\unittest++.h
+	"UnitTestPP.h"
+
+1429950622 e:\githubcoloseum\unittest++\unittestpp.h
+	"Config.h"
+	"TestMacros.h"
+	"CheckMacros.h"
+	"TestRunner.h"
+	"TimeConstraint.h"
+	"ReportAssert.h"
+
+1429950622 e:\githubcoloseum\unittest++\config.h
+
+1429950622 e:\githubcoloseum\unittest++\testmacros.h
+	"Config.h"
+	"TestSuite.h"
+	"ExceptionMacros.h"
+	"ExecuteTest.h"
+	"AssertException.h"
+	"TestDetails.h"
+	"MemoryOutStream.h"
+	"Posix/SignalTranslator.h"
+
+1429950622 e:\githubcoloseum\unittest++\testsuite.h
+
+1429950622 e:\githubcoloseum\unittest++\exceptionmacros.h
+	"Config.h"
+
+1429950622 e:\githubcoloseum\unittest++\executetest.h
+	"Config.h"
+	"ExceptionMacros.h"
+	"TestDetails.h"
+	"TestResults.h"
+	"MemoryOutStream.h"
+	"AssertException.h"
+	"CurrentTest.h"
+	"ReportAssertImpl.h"
+	"Posix/SignalTranslator.h"
+
+1429950622 e:\githubcoloseum\unittest++\testdetails.h
+	"HelperMacros.h"
+
+1429950622 e:\githubcoloseum\unittest++\helpermacros.h
+	"Config.h"
+
+1429950622 e:\githubcoloseum\unittest++\testresults.h
+	"HelperMacros.h"
+
+1429950622 e:\githubcoloseum\unittest++\memoryoutstream.h
+	"Config.h"
+	"HelperMacros.h"
+	<sstream>
+	<cstddef>
+
+1429950622 e:\githubcoloseum\unittest++\assertexception.h
+	"Config.h"
+	"HelperMacros.h"
+	<exception>
+
+1429950622 e:\githubcoloseum\unittest++\currenttest.h
+	"HelperMacros.h"
+
+1429950622 e:\githubcoloseum\unittest++\reportassertimpl.h
+	"Config.h"
+	"HelperMacros.h"
+	<csetjmp>
+
+1429950622 e:\githubcoloseum\unittest++\posix\signaltranslator.h
+	<setjmp.h>
+	<signal.h>
+
+1429950622 e:\githubcoloseum\unittest++\checkmacros.h
+	"HelperMacros.h"
+	"ExceptionMacros.h"
+	"Checks.h"
+	"AssertException.h"
+	"MemoryOutStream.h"
+	"TestDetails.h"
+	"CurrentTest.h"
+	"ReportAssertImpl.h"
+
+1429950622 e:\githubcoloseum\unittest++\checks.h
+	"Config.h"
+	"TestResults.h"
+	"MemoryOutStream.h"
+
+1429950622 e:\githubcoloseum\unittest++\testrunner.h
+	"Test.h"
+	"TestList.h"
+	"CurrentTest.h"
+
+1429950622 e:\githubcoloseum\unittest++\test.h
+	"TestDetails.h"
+
+1429950622 e:\githubcoloseum\unittest++\testlist.h
+	"HelperMacros.h"
+
+1429950622 e:\githubcoloseum\unittest++\timeconstraint.h
+	"TimeHelpers.h"
+	"HelperMacros.h"
+
+1429950622 e:\githubcoloseum\unittest++\timehelpers.h
+	"Config.h"
+	"Posix/TimeHelpers.h"
+	"Win32/TimeHelpers.h"
+
+1429950622 e:\githubcoloseum\unittest++\posix\timehelpers.h
+	<sys/time.h>
+
+1429950622 e:\githubcoloseum\unittest++\win32\timehelpers.h
+	"../Config.h"
+	"../HelperMacros.h"
+
+1429950622 e:\githubcoloseum\unittest++\reportassert.h
+	"HelperMacros.h"
 
