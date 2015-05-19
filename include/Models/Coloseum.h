@@ -15,6 +15,7 @@ class Coloseum
         std::list<Gladiator> GetAllGladiators();
         std::list<Weapon*> GetAllWeapons();
         void AddGladiator(Gladiator gladiator);
+        void RemoveGladiator(std::string gladiatorName);
         void MakeAFight(int gladiator1WeaponId, int gladiator2WeaponId);
 
     protected:

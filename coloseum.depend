@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1432061404 source:e:\githubcoloseum\coloseumcpp\main.cpp
+1432065820 source:e:\githubcoloseum\coloseumcpp\main.cpp
 	<iostream>
 	<fstream>
+	<sstream>
 	"Coloseum.h"
 	"DefaultNamesReader.h"
 
@@ -43,12 +44,13 @@
 	<string>
 	<Weapon.h>
 
-1432061307 e:\githubcoloseum\coloseumcpp\include\models\coloseum.h
+1432062462 e:\githubcoloseum\coloseumcpp\include\models\coloseum.h
 	<list>
 	<map>
 	<Gladiator.h>
 
-1432061257 source:e:\githubcoloseum\coloseumcpp\src\models\coloseum.cpp
+1432062483 source:e:\githubcoloseum\coloseumcpp\src\models\coloseum.cpp
+	<string>
 	"Coloseum.h"
 	"Bow.h"
 	"Spear.h"

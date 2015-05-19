@@ -1,3 +1,4 @@
+#include <string>
 #include "Coloseum.h"
 #include "Bow.h"
 #include "Spear.h"
@@ -39,6 +40,20 @@ void Coloseum::AddGladiator(Gladiator gladiator)
 {
     this->listGladiators.push_back(gladiator);
 }
+
+void Coloseum::RemoveGladiator(std::string gladiatorName)
+{
+    list<Gladiator>::iterator iter;
+    for (iter = listGladiators.begin(); iter != listGladiators.end(); ++iter)
+    {
+        if(iter->GetName().compare(gladiatorName) == 0)
+        {
+            listGladiators.erase(iter);
+            break;
+        }
+    }
+}
+
 void Coloseum::MakeAFight(int gladiator1WeaponId, int gladiator2WeaponId){
 
 
