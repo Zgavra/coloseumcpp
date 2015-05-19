@@ -29,6 +29,7 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="../UnitTest++/Deliv/Release/libUnitTest++.a" />
 				</Linker>
 			</Target>
 		</Build>

@@ -1,14 +1,22 @@
 #include <iostream>
+#include <fstream>
+
 #include "Coloseum.h"
 #include "DefaultNamesReader.h"
+//#include "AllGladiators.txt"
 
 using namespace std;
+
+void Initialize();
 
 int main()
 {
     Coloseum coloseum;
     int selectedOption;
     DefaultNamesReader defaultNamesReader;
+
+    //Initialize();
+
     cout << " Welcome to coloseum!" << endl;
 
     while(selectedOption != 4)
@@ -87,6 +95,67 @@ int main()
             }
         case(3):
             {
+                cout << "Choose first gladiator: " << endl;
+                std::list<Gladiator> gladiators = coloseum.GetAllGladiators();  //samo jednom traziti listu, da se iterator ne zabuni
+                list<Gladiator>::iterator iter;
+                for (iter = gladiators.begin(); iter != gladiators.end(); ++iter)
+                {
+                    cout << iter->GetName() << endl;
+                }
+
+                std::string gladiator1Name;
+                int gladiator1WeaponId;
+                bool continueLoop = true;
+                while(continueLoop)
+                {
+                    cout << "Enter gladiator name:" << endl;
+                    getline(cin, gladiator1Name);
+                    getline(cin, gladiator1Name);
+
+                    for (iter = gladiators.begin(); iter != gladiators.end(); ++iter)
+                    {
+                        if(iter->GetName().compare(gladiator1Name) == 0)
+                        {
+                            gladiator1WeaponId = iter->GetWeapon()->GetId();
+                            continueLoop = false;
+                            break;
+                        }
+                    }
+                }
+
+                cout << "Choose second gladiator: " << endl;
+                for (iter = gladiators.begin(); iter != gladiators.end(); ++iter)
+                {
+                    if(iter->GetName().compare(gladiator1Name) != 0)
+                    {
+                        cout << iter->GetName() << endl;
+                    }
+                }
+
+                std::string gladiator2Name;
+                int gladiator2WeaponId;
+                continueLoop = true;
+                while(continueLoop)
+                {
+                    cout << "Enter gladiator name:" << endl;
+                    getline(cin, gladiator2Name);
+
+                    for (iter = gladiators.begin(); iter != gladiators.end(); ++iter)
+                    {
+                        if(iter->GetName().compare(gladiator1Name) != 0)
+                        {
+                            if(iter->GetName().compare(gladiator2Name) == 0)
+                            {
+                                gladiator2WeaponId = iter->GetWeapon()->GetId();
+                                continueLoop = false;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                coloseum.MakeAFight(gladiator1WeaponId, gladiator2WeaponId);
+
                 break;
             }
         case(4):
@@ -103,8 +172,25 @@ int main()
     return 0;
 }
 
-/*
-void weaponToString(Weapon weapon) {  // function:
-  std::cout << weapon::GetId() +" " + weapon::GetWeaponName();
-}*/
+void Initialize()
+{
+    int firstGladiator, secondGladiator;
+    std::string line;
+    std::ifstream myfile;
+     myfile.open ("include\\Resources\\AllGladiators.txt");
+    if (myfile.is_open())
+    {
+        while ( getline (myfile,line) )
+        {
+            cout << line << '\n';
+        }
+    myfile.close();
+    }
 
+    else cout << "Unable to open file";
+
+        cout<< "Please pick first gladiator from list"<< endl;
+        cin>> firstGladiator;
+        cout<< "Please pick second gladiator from list"<< endl;
+        cin>>secondGladiator;
+}

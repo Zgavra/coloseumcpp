@@ -32,6 +32,7 @@ DefaultNamesReader::DefaultNamesReader()
 
 DefaultNamesReader::~DefaultNamesReader()
 {
+
     //dtor
 }
 
@@ -42,3 +43,4 @@ std::string DefaultNamesReader::GetRandomGladiatorName()
     std::advance(it, randomNumber);
     return *it;
 }
+

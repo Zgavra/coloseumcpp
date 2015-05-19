@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1431983964 source:e:\githubcoloseum\coloseumcpp\main.cpp
+1432061404 source:e:\githubcoloseum\coloseumcpp\main.cpp
 	<iostream>
+	<fstream>
 	"Coloseum.h"
 	"DefaultNamesReader.h"
 
@@ -34,30 +35,33 @@
 	<Weapon.h>
 	<string>
 
-1431725301 source:e:\githubcoloseum\coloseumcpp\src\models\gladiator.cpp
+1432061199 source:e:\githubcoloseum\coloseumcpp\src\models\gladiator.cpp
 	"Gladiator.h"
 	<string>
 
-1431725240 e:\githubcoloseum\coloseumcpp\include\models\gladiator.h
+1432061204 e:\githubcoloseum\coloseumcpp\include\models\gladiator.h
 	<string>
 	<Weapon.h>
 
-1431979486 e:\githubcoloseum\coloseumcpp\include\models\coloseum.h
+1432061307 e:\githubcoloseum\coloseumcpp\include\models\coloseum.h
 	<list>
 	<map>
 	<Gladiator.h>
 
-1431979446 source:e:\githubcoloseum\coloseumcpp\src\models\coloseum.cpp
+1432061257 source:e:\githubcoloseum\coloseumcpp\src\models\coloseum.cpp
 	"Coloseum.h"
 	"Bow.h"
 	"Spear.h"
 	"SwordAndShield.h"
+	"Gladiator.h"
+	"Weapon.h"
+	<iostream>
 
 1431899132 e:\githubcoloseum\coloseumcpp\include\defaultnamesreader.h
 	<string>
 	<list>
 
-1431970079 source:e:\githubcoloseum\coloseumcpp\src\defaultnamesreader.cpp
+1432054557 source:e:\githubcoloseum\coloseumcpp\src\defaultnamesreader.cpp
 	"DefaultNamesReader.h"
 	<iostream>
 	<fstream>

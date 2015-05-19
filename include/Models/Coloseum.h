@@ -15,10 +15,13 @@ class Coloseum
         std::list<Gladiator> GetAllGladiators();
         std::list<Weapon*> GetAllWeapons();
         void AddGladiator(Gladiator gladiator);
+        void MakeAFight(int gladiator1WeaponId, int gladiator2WeaponId);
+
     protected:
     private:
         std::list<Gladiator> listGladiators;
         std::list<Weapon*> listWeapons;
+
 };
 
 #endif // COLOSEUM_H
