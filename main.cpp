@@ -251,5 +251,21 @@ void MakeAFight(Coloseum coloseum)
         }
     }
 
-    coloseum.MakeAFight(gladiator1WeaponId, gladiator2WeaponId);
+    int fightResult = coloseum.MakeAFight(gladiator1WeaponId, gladiator2WeaponId);
+    if(fightResult == 0)
+    {
+        cout << "Gladiator1 VS Gladiator2: IT'S A TIE!"<< endl << endl;
+    }
+    else if(fightResult == 1)
+    {
+        cout << "Gladiator1 VS Gladiator2: Gladiator1 WINS!"<< endl << endl;
+    }
+    else if(fightResult == 2)
+    {
+        cout << "Gladiator1 VS Gladiator2: Gladiator2 WINS!"<< endl << endl;
+    }
+    else
+    {
+        cout << "Gladiator1 VS Gladiator2: Invalid battle result!"<< endl << endl;
+    }
 }

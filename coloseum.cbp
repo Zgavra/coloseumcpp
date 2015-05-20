@@ -29,9 +29,21 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="../UnitTest++/Deliv/Release/libUnitTest++.a" />
+					<Add library="..\UnitTest++\Deliv\Release\libUnitTest++.a" />
 				</Linker>
 			</Target>
+<Target title="Debug -a">
+				<Option output="bin/Debug/coloseum.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="include/Models" />
+				</Compiler>
+			</Target>
+
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
@@ -44,6 +56,7 @@
 		<Unit filename="include/Models/Spear.h" />
 		<Unit filename="include/Models/SwordAndShield.h" />
 		<Unit filename="include/Models/Weapon.h" />
+		<Unit filename="include/Resources/AllGladiators.txt" />
 		<Unit filename="include/Resources/GladiatorNames.txt" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/DefaultNamesReader.cpp" />

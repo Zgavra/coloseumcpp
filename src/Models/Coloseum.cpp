@@ -54,46 +54,48 @@ void Coloseum::RemoveGladiator(std::string gladiatorName)
     }
 }
 
-void Coloseum::MakeAFight(int gladiator1WeaponId, int gladiator2WeaponId){
+int Coloseum::MakeAFight(int gladiator1WeaponId, int gladiator2WeaponId){
 
 
     if (gladiator1WeaponId==1) // bow
     {
         if (gladiator2WeaponId==1) {
-                cout << "Gladiator1 VS Gladiator2: IT'S A TIE!"<< endl << endl;
+                return 0;
         }
         if (gladiator2WeaponId==2) {
-            cout << "Gladiator1 VS Gladiator2: Gladiator1 WINS"<< endl << endl;
+            return 1;
         }
 
         if (gladiator2WeaponId==3) {
-            cout << "Gladiator1 VS Gladiator2: Gladiator2 WINS"<< endl << endl;
+            return 2;
         }
     }
     if (gladiator1WeaponId==2) //spear
     {
         if (gladiator2WeaponId==1) {
-                cout << "Gladiator1 VS Gladiator2: Gladiator2 WINS"<< endl << endl;
+                return 2;
         }
         if (gladiator2WeaponId==2) {
-                cout << "Gladiator1 VS Gladiator2: IT'S A TIE!"<< endl << endl;
+                return 0;
         }
         if (gladiator2WeaponId==3) {
-                cout << "Gladiator1 VS Gladiator2: Gladiator1 WINS"<< endl << endl;
+                return 1;
         }
     }
     if (gladiator1WeaponId==3) //sword and shield
     {
         if (gladiator2WeaponId==1) {
-                cout << "Gladiator1 VS Gladiator2: Gladiator1 WINS!"<< endl << endl;
+                return 1;
         }
         if (gladiator2WeaponId==2) {
-                cout << "Gladiator1 VS Gladiator2: Gladiator2 WINS!"<< endl << endl;
+                return 2;
         }
         if (gladiator2WeaponId==3) {
-                cout << "Gladiator1 VS Gladiator2: IT'S A TIE!"<< endl << endl;
+                return 0;
         }
     }
+
+    return -1;
 };
 
 
