@@ -1,4 +1,4 @@
-#include "Bow.h"
+#include "..\..\include\Models\Bow.h"
 #include <string>
 
 Bow::Bow()
